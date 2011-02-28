@@ -1,0 +1,38 @@
+.bundle
+db/*.sqlite3
+log/*.log
+tmp/**/*
+db/schema.rb
+.rvmrc
+config/database.yml
+
+## MAC OS
+.DS_Store
+
+## TEXTMATE
+*.tmproj
+tmtags
+
+## EMACS
+*~
+\#*
+.\#*
+
+## VIM
+*.swp
+*.swo
+*.swn
+
+## PROJECT::GENERAL
+rdoc
+capybara-*.html
+## PROJECT::SPECIFIC
+public/stylesheets/compiled
+
+## REDCAR
+tags
+
+capybara*html
+tmp/
+*.tar.gz
+bundle

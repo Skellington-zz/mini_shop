@@ -1,6 +1,6 @@
 class AddPermissionsAndProfiles < ActiveRecord::Migration
   def self.up
-    create_table :permissions_profiles do |t|
+    create_table :permissions_profiles, :id => false do |t|
       t.references :permission, :profile
     end
     

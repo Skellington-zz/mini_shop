@@ -25,4 +25,5 @@ group :test, :development do
   gem "cucumber-rails", ">= 0.3.2"
   gem "rspec-rails", ">= 2.5.0"
   gem 'shoulda-matchers'
+  gem 'infinity_test'
 end

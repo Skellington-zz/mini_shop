@@ -14,7 +14,7 @@ development:
   database: mini_shop_development
   pool: 5
   username: mini_shop
-  password:
+  password: mini_shop
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -40,7 +40,7 @@ test:
   database: mini_shop_test
   pool: 5
   username: mini_shop
-  password:
+  password: mini_shop
 
 production:
   adapter: postgresql
@@ -48,4 +48,4 @@ production:
   database: mini_shop_production
   pool: 5
   username: mini_shop
-  password:
+  password: mini_shop

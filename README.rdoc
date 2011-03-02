@@ -1,13 +1,13 @@
 ==MINI SHOP
 
 =PT/BR
-==Para configurar o sistema localmente
-* Gemset e Bundler
+==Configuração
+Para configurar o sistema localmente
   echo 'rvm --create 1.9.2@mini_shop' >> .rvmrc
   gem install bundler
   bundler install
 
-==Configurar a base
+Configurar a base
 * instalar o postgresql 9.0.1 ou superior
 * configurar usuários e bases do postgresql
   $ psql

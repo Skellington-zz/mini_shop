@@ -9,6 +9,7 @@ gem 'pg'
 gem 'jquery-rails'
 gem 'simple_form', "~> 1.3.1"
 gem 'foreigner', '0.9.1'
+gem 'annotate'
 
 # HAML
 gem 'haml'

@@ -2,32 +2,31 @@
 
 ==PT/BR
 <b>Para configurar o sistema localmente</b>
-  echo 'rvm --create 1.9.2@mini_shop' >> .rvmrc
-  gem install bundler
-  bundler install
+echo 'rvm --create 1.9.2@mini_shop' >> .rvmrc
+gem install bundler
+bundler install
 
 <b>Configurar a base</b>
- - instalar o postgresql 9.0.1 ou superior
- - configurar usuários e bases do postgresql
-   <em>$ psql
+*instalar o postgresql 9.0.1 ou superior
+*configurar usuários e bases do postgresql
+  $ psql
     CREATE ROLE mini_shop LOGIN ENCRYPTED PASSWORD 'mini_shop' NOINHERIT CREATEDB;
     \q
-   $ createdb mini_shop_development -O mini_shop
-   $ createdb mini_shop_test -O mini_shop
+  $ createdb mini_shop_development -O mini_shop
+  $ createdb mini_shop_test -O mini_shop
 
-   $ psql
+  $ psql
     GRANT ALL ON DATABASE mini_shop_development TO mini_shop;
     GRANT ALL ON DATABASE mini_shop_test TO mini_shop;
     \q
-   </em>
 
-   <em>$ cp config/database.sample.yml config/database.yml</em>
+  $ cp config/database.sample.yml config/database.yml
 
 <b>**opcional**</b> caso use o postgresql-8.4, deve ser alterado a conf de metodo de autenticação local.
 
-   <em>$ sudo vim /etc/postgresql/8.4/main/pg_hba.conf</em>
+  $ sudo vim /etc/postgresql/8.4/main/pg_hba.conf
 
-   local   all         postgres                     trust
-   local   all         all                          trust
+    local   all         postgres                     trust
+    local   all         all                          trust
 
-   <em>$ sudo /etc/init.d/postgresql-8.4 restart</em>
+  $ sudo /etc/init.d/postgresql-8.4 restart

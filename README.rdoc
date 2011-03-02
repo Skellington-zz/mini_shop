@@ -7,8 +7,8 @@ gem install bundler
 bundler install
 
 <b>Configurar a base</b>
-*instalar o postgresql 9.0.1 ou superior
-*configurar usuários e bases do postgresql
+* instalar o postgresql 9.0.1 ou superior
+* configurar usuários e bases do postgresql
   $ psql
     CREATE ROLE mini_shop LOGIN ENCRYPTED PASSWORD 'mini_shop' NOINHERIT CREATEDB;
     \q
